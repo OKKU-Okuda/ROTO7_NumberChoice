@@ -1,6 +1,7 @@
 ﻿// roto7.cpp 
 //
 #include <string.h>
+#include <conio.h>
 
 #include <random>
 #include <iostream>
@@ -39,6 +40,9 @@ int main()
    {
       std::cout << (idx + 1) << ":" << choice[idx] << std::endl;
    }
+   // キー入力待ち
+   rewind(stdin);
+   return _getch();
 }
 
 void Choice()
